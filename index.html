@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.
+min.css"
+/>
+    <title>Detran MS</title>
+  </head>
+  <body class="flex-column-center">  
+
+    <!-- <img class="bg" src="/img/teste.png" alt="Logo do Detran MS"> -->
+    <section class="section flex-column-center">
+      <div class="login__container-outside flex-column-center">
+        <div class="logo-container">
+          <figure>
+            <img class="logo-detranms" src="./img/logo-detranms.png" alt="Logo do Detran MS">
+          </figure>            
+          <p class="text-title">Seja bem-vindo!</p>
+            </div>
+            <div class="login__container-inside flex-column-center flex-gap ">
+              <form class="flex-column-center flex-gap form">                                                    
+                <input
+                class="input"
+                id="login"
+                name="login"
+                type="text"
+                placeholder="Login"  
+                required
+                autocomplete="off"
+                pattern="\b\d{3}\.\d{3}\.\d{3}-\d{2}\b|\b(\d{11})\b|\b[a-z]{5}-ldpa[0-9]{1}\b|\b[a-z]{5}\b-[a-z]{6}\b"
+                oninvalid="setCustomValidity('Login inválido. Por favor entre com o CPF no formato: 000.000.000-00 ou somente numeros')"
+                onchange="try{setCustomValidity('')}catch(e){}"
+                />
+                <input
+                class="input cadeado"
+                id="pass"
+                name="password"
+                type="password"
+                placeholder="Senha"  
+                required
+                autocomplete="off"
+                minlength="6"
+                />          
+              </form>
+              <button class="btn-green" type="submit">ENTRAR</button>
+            </div>
+            <figure class="flex-column-center">
+            <img class="logo-gov" src="./img/logo-govbr.png" alt="Logo do Governo do Estado de MS">
+            </figure>
+          </div>
+        </div>
+      <ul class="text">
+      <li class="circle"></li>  <!--1-verde-->
+      <li class="square"></li>  <!--2-Vermelho-->
+      <li class="square"></li><!--3-Azul-->
+      <li class="circle"></li><!--7-Rosa-->
+      <li class="square"></li>  <!--5-Cinza-->
+      <li class="circle"></li>  <!--6-Amarelo-->
+      <li class="square"></li>  <!--4-Roxo-->
+      <li class="square-green"></li>  <!--10-Turquesa-->
+      <li class="square-green"></li>  <!--9-Preto-->
+      <li class="square-green"></li>  <!--8-Azul-piscina-->
+      <li class="square"></li>  
+    </ul>
+    </section>  
+    <script src="script.js"></script>
+  </body>
+</html>
